@@ -39,12 +39,6 @@ nvm install node
 printf "\n\n** Setting Node version with nvm **\n\n"
 nvm use node
 
-# Type Definitions
-printf "\n\n** Installing TypeScript **\n\n"
-npm i -g typescript
-printf "\n\n** Installing Typings **\n\n"
-npm i -g typings
-
 # VS Code
 printf "\n\n** Installing VS Code **\n\n"
 brew cask install visual-studio-code
