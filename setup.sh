@@ -25,7 +25,7 @@ brew install cask
 printf "\n\n** Installing wget **\n\n"
 brew install wget
 
-# Rails
+# Ruby on Rails
 printf "\n\n** Installing Ruby on Rails with rvm **\n\n"
 \curl -sSL https://get.rvm.io | bash -s stable --rails
 
@@ -39,9 +39,9 @@ nvm install node
 printf "\n\n** Setting Node version with nvm **\n\n"
 nvm use node
 
-# VS Code
-printf "\n\n** Installing VS Code **\n\n"
-brew cask install visual-studio-code
+# Visual Studio Code Insiders
+printf "\n\n** Installing VS Code Insiders Edition **\n\n"
+brew cask install visual-studio-code-insiders
 printf "\n\n** Installing VS Code Extensions **\n\n"
 code --install-extension Shan.code-settings-sync
 
@@ -49,21 +49,37 @@ code --install-extension Shan.code-settings-sync
 printf "\n\n** Installing Spectacle **\n\n"
 brew cask install spectacle
 
+# Yarn
+printf "\n\n** Installing Yarn **\n\n"
+brew install yarn --without-node
+
+# Typescript
+printf "\n\n** Installing typescript **\n\n"
+yarn global add typescript
+
 # eslint
 printf "\n\n** Installing eslint **\n\n"
-npm i -g eslint
+yarn global add eslint
 printf "\n\n** Installing eslint-plugin-react **\n\n"
-npm i -g eslint-plugin-react
+yarn global add eslint-plugin-react
 printf "\n\n** Copying eslint file to home directory **\n\n"
 cp ./js/.eslintrc.js ~
 
 # stylelint
 printf "\n\n** Installing stylelint **\n\n"
-npm i -g stylelint
+yarn global add stylelint
 printf "\n\n** Installing stylelint-config-standard **\n\n"
-npm i -g stylelint-config-standard
+yarn global add stylelint-config-standard
 printf "\n\n** Copying stylelint file to home directory **\n\n"
 cp ./js/.stylelintrc.js ~
+
+# tslint
+printf "\n\n** Installing tslint **\n\n"
+yarn global add tslint
+printf "\n\n** Installing tslint-react **\n\n"
+yarn global add tslint-react
+printf "\n\n** Copying tslint file to home directory **\n\n"
+cp ./js/tslint.json ~
 
 # Final Output
 printf "\n\n*** Configuration Complete! ***\n\n"

@@ -1,18 +1,25 @@
-Configuring Development Environment
-==================
-
+## Installation
 1. Clone on your local machine: `https://github.com/MitchLindsay/dotfiles.git`
 2. Run `sh setup.sh` from your OSX terminal
-3. The following will be installed:
-   + Homebrew
-   + Cask
-   + wget
-   + Ruby on Rails with rvm
-   + Node with nvm
-   + Visual Studio Code with Settings Sync Extension
-   + Spectacle
-   + eslint
-   + stylelint
-4. The following will be copied to your home directory:
-   + .eslintrc.js
-   + .stylelintrc.js
+
+## Applications & Modules
++ Homebrew
++ Cask
++ wget
++ Ruby on Rails with rvm
++ Node with nvm
++ VS Code Insiders with Settings Sync
++ Spectacle
++ Yarn
++ Typescript
++ eslint
++ stylelint
++ tslint
+
+## Files Included
++ Custom Colored zsh theme
++ Gradient Background for iTerm
++ Fonts for iTerm and VS Code
++ .eslintrc.js
++ .stylelintrc.js
++ tslint.json
