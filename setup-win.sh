@@ -29,9 +29,7 @@ printf "\n\n** Installing Node **\n\n"
 nvm install stable
 
 printf "\n\n** Installing Yarn **\n\n"
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-sudo apt-get update && sudo apt-get install yarn
+curl -o- -L https://yarnpkg.com/install.sh | bash
 
 printf "\n\n** Install VSTS CLI **\n\n"
 curl -L https://aka.ms/install-vsts-cli | bash
