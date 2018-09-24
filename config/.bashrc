@@ -1,6 +1,3 @@
-# Run zsh
-bash -c zsh
-
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -101,3 +98,8 @@ fi
 #    . /etc/bash_completion
 #fi
 
+# Run zsh
+bash -c zsh
+
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
